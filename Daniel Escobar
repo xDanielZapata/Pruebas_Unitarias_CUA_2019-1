@@ -1,0 +1,21 @@
+-----------
+raiz
+------------
+import math
+
+def raiz(y):
+	return math.sqrt(y)
+
+-------------------
+raiz_unitaria
+------------------
+import unittest
+import raiz
+
+class Test_raiz(unittest.TestCase):
+    def test_exp(self):
+        result=raiz.raiz(100)
+        self.assertEqual(result,10)
+
+if __name__=='__main__':
+    unittest.main()
